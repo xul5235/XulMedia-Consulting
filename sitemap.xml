@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <!-- Main Home Page -->
+    <url>
+        <loc>https://www.xul.no/</loc>
+        <lastmod>2026-03-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.xul.no/?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="no" href="https://www.xul.no/?lang=no"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.xul.no/?lang=es"/>
+    </url>
+    <!-- About Page -->
+    <url>
+        <loc>https://www.xul.no/about.html</loc>
+        <lastmod>2026-03-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.xul.no/about.html?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="no" href="https://www.xul.no/about.html?lang=no"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.xul.no/about.html?lang=es"/>
+    </url>
+    <!-- Chat Page -->
+    <url>
+        <loc>https://www.xul.no/chat.html</loc>
+        <lastmod>2026-03-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.xul.no/chat.html?lang=en"/>
+        <xhtml:link rel="alternate" hreflang="no" href="https://www.xul.no/chat.html?lang=no"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.xul.no/chat.html?lang=es"/>
+    </url>
+</urlset>

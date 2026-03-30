@@ -1,11 +1,441 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Index Page</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XULMEDIA | Food Photography &amp; Visual Identity — Oslo</title>
+    <meta name="description" content="Food photography and visual identity for Oslo restaurants and small businesses. Most affordable professional photography in Oslo. Founding client spots available.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://www.xul.no/" />
+    <link rel="preload" as="image" href="assets/hero-poster.jpg.webp">
+    <link rel="alternate" hreflang="x-default" href="https://www.xul.no/" />
+    <link rel="alternate" hreflang="en" href="https://www.xul.no/?lang=en" />
+    <link rel="alternate" hreflang="no" href="https://www.xul.no/?lang=no" />
+    <link rel="alternate" hreflang="es" href="https://www.xul.no/?lang=es" />
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "XULMEDIA & CONSULTING",
+      "description": "Food photography and visual identity for Oslo restaurants and small businesses.",
+      "url": "https://www.xul.no",
+      "telephone": "+4794730869",
+      "email": "xullagomarsino@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Oslo",
+        "addressCountry": "NO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 59.9139,
+        "longitude": 10.7522
+      },
+      "sameAs": ["https://instagram.com/xulmediaconsulting"],
+      "priceRange": "2000-10000 NOK",
+      "image": "https://www.xul.no/assets/founder.webp",
+      "founder": {
+        "@type": "Person",
+        "name": "Xul Lagomarsino",
+        "url": "https://www.xul.no/about.html"
+      }
+    }
+    </script>
 </head>
 <body>
-    <h1>Welcome to Our Website</h1>
-    <script src="assets/script.js"></script>
+    <div class="sr-only" aria-hidden="true">
+        <p>Food Photography &amp; Visual Identity for Oslo Restaurants</p>
+        <p>Oslo-based professional photographer and marketing strategist helping restaurants, cafés, and small businesses with food photography, visual identity, content strategy, and brand growth.</p>
+    </div>
+
+    <header id="navbar" role="banner">
+        <div class="logo"><a href="#" style="color: inherit; text-decoration: none;">XULMEDIA&amp;CONSULTING</a></div>
+        <nav id="main-nav" role="navigation" aria-label="Main menu">
+            <ul>
+                <li><a href="#work" data-i18n="nav_work">Work</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#process" data-i18n="nav_process">Process</a></li>
+                <li><a href="#pricing" data-i18n="nav_plans">Plans</a></li>
+                <li><a href="#philosophy" data-i18n="nav_philosophy">Philosophy</a></li>
+            </ul>
+        </nav>
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-btn" data-lang="no">NO</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <a href="#contact" class="btn-primary" id="header-cta" data-i18n="nav_contact">Contact</a>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile Navigation">
+        <ul>
+            <li><a href="#work" class="mobile-nav-link" data-i18n="nav_work">Work</a></li>
+            <li><a href="#services" class="mobile-nav-link" data-i18n="nav_services">Services</a></li>
+            <li><a href="#process" class="mobile-nav-link" data-i18n="nav_process">Process</a></li>
+            <li><a href="#pricing" class="mobile-nav-link" data-i18n="nav_plans">Plans</a></li>
+            <li><a href="#philosophy" class="mobile-nav-link" data-i18n="nav_philosophy">Philosophy</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="mobile-lang-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-btn" data-lang="no">NO</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+    </div>
+
+    <main role="main">
+        <!-- HERO -->
+        <section id="hero" class="reveal-on-scroll">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero_title">Your food deserves to be seen.</h1>
+                <p class="hero-subtitle" data-i18n-html="hero_sub">Visual content for Oslo's restaurants and small businesses.<br>Photography, video, and brand identity — built to convert attention into customers.</p>
+                <p class="hero-tagline" data-i18n="hero_tagline">We make what you sell look like it's worth every krone.</p>
+                <div class="hero-buttons">
+                    <a href="#work" class="btn-secondary" data-i18n="hero_cta1">View Work</a>
+                    <a href="#contact" class="btn-primary" data-i18n="hero_cta2">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <video autoplay loop muted playsinline class="hero-video" poster="assets/hero-poster.jpg.webp">
+                    <source src="assets/Highlights-1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="work" class="reveal-on-scroll">
+            <div class="section-header">
+                <h2 data-i18n="work_title">Selected Work</h2>
+                <p data-i18n="work_sub">Every image has a purpose. Every frame tells a story about your brand.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="assets/causa2.webp" alt="MANKA Restaurant Food Photography Oslo" class="portfolio-img" loading="lazy" width="800" height="1000">
+                    <div class="item-overlay">
+                        <h3>MANKA</h3>
+                        <p data-i18n="work_manka">Food photography and visual identity for an Oslo restaurant.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/DSC0850.webp" alt="Plating Detail Food Photography" class="portfolio-img" loading="lazy" width="800" height="1000">
+                    <div class="item-overlay">
+                        <h3 data-i18n="work_plating">Plating Detail</h3>
+                        <p data-i18n="work_plating_sub">Culinary Art</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/manos.webp" alt="Restaurant Atmosphere Photography Oslo" class="portfolio-img" loading="lazy" width="800" height="1000">
+                    <div class="item-overlay">
+                        <h3 data-i18n="work_atmo">Atmosphere</h3>
+                        <p data-i18n="work_atmo_sub">Cinematic Shot</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <video autoplay loop muted playsinline style="width:100%;height:100%;object-fit:cover;border-radius:4px;">
+                        <source src="assets/Manka-2.mp4" type="video/mp4">
+                    </video>
+                    <div class="item-overlay">
+                        <h3 data-i18n="work_bts">MANKA — Behind the Scenes</h3>
+                        <p data-i18n="work_bts_sub">Video Production</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="reveal-on-scroll">
+            <div class="services-container">
+                <div class="services-text">
+                    <h2 data-i18n="services_title">What we do.</h2>
+                    <p data-i18n="services_sub">From a single shoot to a full visual identity. We meet you where you are.</p>
+                </div>
+                <div class="services-list">
+                    <div class="service-card">
+                        <h3 data-i18n="svc1_title">Photography</h3>
+                        <p data-i18n="svc1_desc">Professional food and atmosphere photography that makes people stop scrolling — and start booking.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 data-i18n="svc2_title">Visual Identity</h3>
+                        <p data-i18n="svc2_desc">A consistent look across your menu, social media, and website. Because how you look is how you're remembered.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 data-i18n="svc3_title">Content Strategy</h3>
+                        <p data-i18n="svc3_desc">A clear plan for what to post, when, and why. Built around your business — not a generic template.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section id="process" class="reveal-on-scroll">
+            <div class="section-header centered">
+                <h2 data-i18n="process_title">How it works.</h2>
+                <p data-i18n="process_sub">Simple, clear, and built around your business.</p>
+            </div>
+            <div class="process-layout">
+                <div class="process-steps-col">
+                    <div class="process-step-item active" data-step="1">
+                        <div class="process-step-meta">
+                            <span class="process-step-num">01</span>
+                            <div class="process-progress-bar"><div class="process-progress-fill"></div></div>
+                        </div>
+                        <div class="process-step-body">
+                            <h3 data-i18n="step1_title">Discovery</h3>
+                            <p data-i18n="step1_desc">We start with a real conversation — no intake forms, no agency jargon. Just a direct talk about your brand, your goals, and what would genuinely help your business.</p>
+                        </div>
+                    </div>
+                    <div class="process-step-item" data-step="2">
+                        <div class="process-step-meta">
+                            <span class="process-step-num">02</span>
+                            <div class="process-progress-bar"><div class="process-progress-fill"></div></div>
+                        </div>
+                        <div class="process-step-body">
+                            <h3 data-i18n="step2_title">Production</h3>
+                            <p data-i18n="step2_desc">We come to you. A professional half-day shoot at your location — food, atmosphere, detail. We handle lighting, styling, and direction. You focus on running your business.</p>
+                        </div>
+                    </div>
+                    <div class="process-step-item" data-step="3">
+                        <div class="process-step-meta">
+                            <span class="process-step-num">03</span>
+                            <div class="process-progress-bar"><div class="process-progress-fill"></div></div>
+                        </div>
+                        <div class="process-step-body">
+                            <h3 data-i18n="step3_title">Delivery</h3>
+                            <p data-i18n="step3_desc">Fully retouched, ready-to-post assets within 5 business days — optimised for Instagram, your website, and print. All in one polished package.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-visual-col">
+                    <div class="process-visual-panel">
+                        <div class="process-img active" data-img="1">
+                            <img src="assets/discovery.webp" alt="Discovery" loading="lazy">
+                            <div class="process-img-label" data-i18n="step1_label">Step 01 — Discovery</div>
+                        </div>
+                        <div class="process-img" data-img="2">
+                            <img src="assets/AISTOCK4.webp" alt="Production" loading="lazy">
+                            <div class="process-img-label" data-i18n="step2_label">Step 02 — Production</div>
+                        </div>
+                        <div class="process-img" data-img="3">
+                            <img src="assets/delivery.webp" alt="Delivery" loading="lazy">
+                            <div class="process-img-label" data-i18n="step3_label">Step 03 — Delivery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IN PROGRESS -->
+        <section id="upcoming" class="reveal-on-scroll">
+            <div class="section-header">
+                <h2 data-i18n="upcoming_title">In progress.</h2>
+                <p data-i18n="upcoming_sub">Projects currently in production or coming soon.</p>
+            </div>
+            <div class="upcoming-grid">
+                <div class="upcoming-card">
+                    <div class="upcoming-placeholder">
+                        <span class="upcoming-label" data-i18n="upcoming1_label">Coming Soon</span>
+                    </div>
+                    <div class="upcoming-info">
+                        <h3 data-i18n="upcoming1_title">New Client — Oslo</h3>
+                        <p data-i18n="upcoming1_desc">Food photography &amp; social media content. Shoot scheduled for Q1 2026.</p>
+                        <span class="upcoming-tag" data-i18n="upcoming1_tag">Photography</span>
+                    </div>
+                </div>
+                <div class="upcoming-card">
+                    <div class="upcoming-placeholder">
+                        <span class="upcoming-label" data-i18n="upcoming2_label">In Production</span>
+                    </div>
+                    <div class="upcoming-info">
+                        <h3 data-i18n="upcoming2_title">Visual Identity Project</h3>
+                        <p data-i18n="upcoming2_desc">Full brand direction for a local café. Visual identity and content strategy.</p>
+                        <span class="upcoming-tag" data-i18n="upcoming2_tag">Visual Identity</span>
+                    </div>
+                </div>
+                <div class="upcoming-card">
+                    <div class="upcoming-placeholder open-slot">
+                        <span class="upcoming-label" data-i18n="upcoming3_label">Open Slot</span>
+                    </div>
+                    <div class="upcoming-info">
+                        <h3 data-i18n="upcoming3_title">Your Project Here</h3>
+                        <p data-i18n="upcoming3_desc">3 founding client spots available at a reduced rate. Be part of the first wave.</p>
+                        <span class="upcoming-tag founding" data-i18n="upcoming3_tag">Founding Rate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTAGRAM -->
+        <section id="instagram" class="reveal-on-scroll">
+            <div class="instagram-header">
+                <div>
+                    <h2 data-i18n="ig_title">Follow the work.</h2>
+                    <p data-i18n="ig_sub">Behind the scenes, new projects, and daily content.</p>
+                </div>
+                <a href="https://instagram.com/xulmediaconsulting" target="_blank" class="btn-secondary">@xulmediaconsulting</a>
+            </div>
+            <div class="instagram-grid">
+                <div class="instagram-placeholder" style="overflow: hidden;"><img src="assets/DSC0821.webp" alt="Instagram Post 1" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+                <div class="instagram-placeholder" style="overflow: hidden;"><img src="assets/_DSC0861.webp" alt="Instagram Post 2" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+                <div class="instagram-placeholder" style="overflow: hidden;"><img src="assets/DSC0907.webp" alt="Instagram Post 3" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+                <div class="instagram-placeholder" style="overflow: hidden;"><img src="assets/_DSC0919.webp" alt="Instagram Post 4" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+                <div class="instagram-placeholder" style="overflow: hidden;"><img src="assets/_DSC0922.webp" alt="Instagram Post 5" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+                <div class="instagram-placeholder" style="overflow: hidden;"><img src="assets/_DSC1086.webp" alt="Instagram Post 6" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+            </div>
+            <p class="instagram-note" data-i18n-html="ig_note">Live Instagram feed coming soon. Connect via <a href="https://behold.so" target="_blank" style="color:var(--text-primary);text-decoration:underline;text-underline-offset:3px;">Behold.so</a> once the account is active.</p>
+        </section>
+
+        <!-- PRICING -->
+        <section id="pricing" class="reveal-on-scroll">
+            <div class="section-header centered">
+                <h2 data-i18n="pricing_title">Simple, transparent plans.</h2>
+                <p data-i18n="pricing_sub">No surprises. No contracts you don't understand. Just great work at a fair price.</p>
+            </div>
+            <div style="text-align:center;margin-bottom:3rem;">
+                <p class="founding-banner" data-i18n-html="founding_banner"><strong>Founding Client Offer:</strong> Currently taking on 3 founding clients at a reduced rate in exchange for a testimonial and case study rights.</p>
+            </div>
+            <div class="pricing-container">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="tier1_title">Photography Session</h3>
+                        <p class="price-desc" data-i18n="tier1_desc">One-off shoot to elevate your menu or space.</p>
+                        <h4 class="price-amount">2,000 NOK</h4>
+                        <p class="price-tag" data-i18n="tier1_tag">Most affordable in Oslo</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-i18n="tier1_f1">Half-day professional shoot</li>
+                        <li data-i18n="tier1_f2">High-end food &amp; atmosphere photography</li>
+                        <li data-i18n="tier1_f3">Cinematic lighting &amp; styling</li>
+                        <li data-i18n="tier1_f4">15–20 fully retouched deliverables</li>
+                        <li data-i18n="tier1_f5">Delivered within 5 business days</li>
+                    </ul>
+                    <a href="tel:+4794730869" class="btn-secondary w-full" style="display:block;text-align:center;" data-i18n="tier1_cta">Book a Session</a>
+                </div>
+                <div class="pricing-card featured-pricing">
+                    <div class="pricing-header">
+                        <h3 data-i18n="tier2_title">Content Direction</h3>
+                        <p class="price-desc" data-i18n="tier2_desc">Monthly retainer for consistent visual presence.</p>
+                        <h4 class="price-amount">10,000 NOK/mo</h4>
+                        <p class="price-tag" data-i18n="tier2_tag">2 founding spots remaining</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-i18n="tier2_f1">Monthly dedicated photo/video shoot</li>
+                        <li data-i18n="tier2_f2">Ongoing visual aesthetic consulting</li>
+                        <li data-i18n="tier2_f3">Content batching for social media</li>
+                        <li data-i18n="tier2_f4">Priority editing and delivery</li>
+                    </ul>
+                    <a href="tel:+4794730869" class="btn-primary w-full" style="display:block;text-align:center;" data-i18n="tier2_cta">Start a Conversation</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 data-i18n="tier3_title">Visual Identity Manager</h3>
+                        <p class="price-desc" data-i18n="tier3_desc">Full brand direction and content ecosystem.</p>
+                        <h4 class="price-amount" data-i18n="tier3_amount">Custom</h4>
+                        <p class="price-tag" data-i18n="tier3_tag">Tailored to your business</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li data-i18n="tier3_f1">Complete visual direction &amp; strategy</li>
+                        <li data-i18n="tier3_f2">Multi-channel content creation (Photo/Video)</li>
+                        <li data-i18n="tier3_f3">Direct collaboration on marketing campaigns</li>
+                        <li data-i18n="tier3_f4">Ongoing strategy and content planning</li>
+                    </ul>
+                    <a href="chat.html" class="btn-secondary w-full" style="display:block;text-align:center;" data-i18n="tier3_cta">Let's Talk</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="reveal-on-scroll">
+            <div class="section-header centered">
+                <h2 data-i18n="faq_title">Common questions.</h2>
+                <p data-i18n="faq_sub">Everything you need to know before reaching out.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq1_q">How long does a shoot take?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer"><p data-i18n="faq1_a">A standard Photography Session is a half-day shoot — roughly 3 to 4 hours at your location. We handle setup, styling, and breakdown within that window. For larger projects or retainer clients, we plan the schedule together.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq2_q">Do I get all the raw photos?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer"><p data-i18n="faq2_a">You receive 15–20 fully retouched, high-resolution images ready to use. Raw files are not included by default — the editing is part of the value. If you need raws for a specific reason, we can discuss it.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq3_q">How fast will I receive my photos?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer"><p data-i18n="faq3_a">Delivery within 5 business days from the day of the shoot. Retainer clients get priority editing and typically receive content within 3 business days.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq4_q">Do you work outside Oslo?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer"><p data-i18n="faq4_a">Primarily Oslo-based, but open to projects in the greater Oslo region. For locations further away, travel costs may apply. Get in touch and we'll work something out.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span data-i18n="faq5_q">What's the Founding Client Offer exactly?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer"><p data-i18n="faq5_a">We're onboarding our first 3 long-term clients at a reduced monthly rate. In exchange, we ask for an honest testimonial and the right to feature the work as a case study. The work quality is the same — the price reflects the early stage of the partnership.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHILOSOPHY -->
+        <section id="philosophy" class="reveal-on-scroll">
+            <div class="split-layout">
+                <div class="split-image">
+                    <img src="assets/founder.webp" id="founder-img" alt="Xul — Founder of XULMEDIA Oslo" class="founder-img" loading="lazy">
+                </div>
+                <div class="split-content">
+                    <h2 data-i18n="phil_quote">"Consistency creates identity."</h2>
+                    <p class="large-text" data-i18n="phil_text">Most small businesses have great products and forgettable visuals. We fix that.</p>
+                    <div class="about-xul">
+                        <h3 data-i18n="phil_about_title">About Xul</h3>
+                        <p data-i18n="phil_about_desc">Based in Oslo. Working with restaurants, cafés, and ambitious local brands who want to look as good as they actually are.</p>
+                        <a href="about.html" class="btn-secondary" style="margin-top: 1.5rem; display: inline-block;" data-i18n="phil_cta">Meet the Founder &amp; Personal Log ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="reveal-on-scroll">
+            <h2 data-i18n="contact_title">Let's talk about your brand.</h2>
+            <p class="contact-sub" data-i18n-html="contact_sub">Not sure where to start? Send a message and we'll figure it out together.<br>No commitment. No agency jargon. Just a real conversation.</p>
+            <div class="cta-buttons">
+                <a href="https://instagram.com/xulmediaconsulting" target="_blank" class="btn-primary cta-large" data-i18n="contact_ig">DM on Instagram</a>
+                <a href="/cdn-cgi/l/email-protection#fb838e97979a9c94969a8988929594bb9c969a9297d5989496" class="btn-secondary cta-large" data-i18n="contact_email">Send an Email</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p data-i18n="footer_rights">© 2026 XULMEDIA&amp;CONSULTING. All rights reserved.</p>
+            <p data-i18n="footer_location">Oslo, Norway</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
